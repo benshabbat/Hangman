@@ -31,18 +31,18 @@ def apply_guess(state: dict, ch: str) -> bool:
     state["wrong_guesses"] += 1
     return False
 
-def apply_guess(state: dict, ch: str) -> bool:
-    is_valid, msg = validate_guess(ch,state["guessed"])
-    if is_valid:
-        ch = ch.lower()
-        state["guessed"].add(ch)
-        if ch in state["secret"]:
-            for idx, letter in enumerate(state["secret"]):
-                if letter == ch:
-                    state["display"][idx] = ch
-            return True
-        state["wrong_guesses"] += 1
-    return False
+# def apply_guess(state: dict, ch: str) -> bool:
+#     is_valid, msg = validate_guess(ch,state["guessed"])
+#     if is_valid:
+#         ch = ch.lower()
+#         state["guessed"].add(ch)
+#         if ch in state["secret"]:
+#             for idx, letter in enumerate(state["secret"]):
+#                 if letter == ch:
+#                     state["display"][idx] = ch
+#             return True
+#         state["wrong_guesses"] += 1
+#     return False
 
 
 

@@ -1,0 +1,1 @@
+# This file makes the hangman directory a Python package
