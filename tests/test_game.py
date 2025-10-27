@@ -151,3 +151,4 @@ class TestHangmanGame(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+    # python -m unittest tests.test_game -v
